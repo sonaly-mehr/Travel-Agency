@@ -1,0 +1,24 @@
+[{
+    "id": 1,
+    "image":"https://image.freepik.com/free-vector/cartoon-bus_29937-1182.jpg",
+    "name": "Bus",
+    "price": 57
+  }, 
+  {
+  "id": 2,
+  "image":"https://webstockreview.net/images/car-clipart-cartoon-16.png",
+  "name": "Car",
+  "price": 67
+  },
+  {
+  "id": 3,
+  "image":"https://t3.ftcdn.net/jpg/00/27/35/36/360_F_27353698_nYNfdSxeR28gV3EUNdoRD6c1N3FM90bm.jpg",
+    "name": "Bike",
+    "price": 45
+  },
+  {
+  "id": 4,
+  "image":"https://freepngimg.com/thumb/train/29499-2-train-file-thumb.png",
+    "name": "Train",
+    "price": 35
+  }]
