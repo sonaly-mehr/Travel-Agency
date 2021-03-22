@@ -6,6 +6,7 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
 import { UserContext } from '../../App';
+import { useHistory, useLocation } from 'react-router-dom';
 firebase.initializeApp(firebaseConfig);
 
 const Login = () => {
@@ -21,7 +22,10 @@ const Login = () => {
     success: ''
   })
 
-  const [loggedInUser, setLoggedInUser]=useContext(UserContext);
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  let history = useHistory();
+  let location = useLocation();
+  let { from } = location.state || { from: { pathname: "/" } };
 
   const handleSingIn = () => {
     firebase.auth().signInWithPopup(provider)
@@ -34,6 +38,8 @@ const Login = () => {
           photo: photoURL
         }
         setUser(SingedIn);
+        setLoggedInUser(SingedIn);
+        history.replace(from);
         console.log(displayName, photoURL, email);
       })
   }
@@ -57,7 +63,8 @@ const Login = () => {
     if (e.target.name === 'email') {
       isFormValid = /\S+@\S+\.\S+/.test(e.target.value);
     }
-    if (e.target.name === 'password') {
+    if (e.target.name === 'password'){
+
       const isPasswordValid = e.target.value.length > 6;
       const isPasswordHasNumber = /\d{1}/.test(e.target.value);
       isFormValid = isPasswordValid && isPasswordHasNumber;
@@ -98,6 +105,7 @@ const Login = () => {
           newUserInfo.success = true;
           setUser(newUserInfo);
           setLoggedInUser(newUserInfo);
+          history.replace(from);
           console.log('sing in user info', res.user);
         })
         .catch((error) => {
@@ -143,7 +151,7 @@ const Login = () => {
             <input type="email" name="email" onBlur={handleBlur} placeholder="Enter Your Email" required /><br />
             <input type="password" name="password" onBlur={handleBlur} placeholder="Enter Your Password" required /><br />
             {/* {
-              newUser && <input className="nameField" type="password" name="password" onBlur={handleBlur} placeholder="Confirm Password" required />
+              newUser && <input className="nameField" type="password" name="ConfirmPassword" onBlur={handleBlur} placeholder="Confirm Password" required />
             } */}
 
             {!newUser && <div><input type="checkbox" /><label htmlFor="">Remember Me</label> <a className="pass-retrieve" href="#">Forgot Password?</a></div>}

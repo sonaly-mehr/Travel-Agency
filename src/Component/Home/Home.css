@@ -12,3 +12,9 @@
     height: 100vh;
     width: 100%;
 }
+
+@media (max-width: 480px){
+    .rideData-wrap{
+        margin-top:250px;
+    }
+}

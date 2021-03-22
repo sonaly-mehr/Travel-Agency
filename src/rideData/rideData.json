@@ -2,23 +2,37 @@
     "id": 1,
     "image":"https://image.freepik.com/free-vector/cartoon-bus_29937-1182.jpg",
     "name": "Bus",
-    "price": 57
+    "priceOne": 57,
+    "priceTwo": 67,
+    "priceThree": 45
   }, 
   {
   "id": 2,
   "image":"https://webstockreview.net/images/car-clipart-cartoon-16.png",
   "name": "Car",
-  "price": 67
+  "priceOne": 57,
+  "priceTwo": 67,
+  "priceThree": 45,
+  "location": "Mirpur",
+  "location2": "Dhanmondi"
   },
   {
   "id": 3,
   "image":"https://t3.ftcdn.net/jpg/00/27/35/36/360_F_27353698_nYNfdSxeR28gV3EUNdoRD6c1N3FM90bm.jpg",
     "name": "Bike",
-    "price": 45
+    "priceOne": 57,
+    "priceTwo": 67,
+    "priceThree": 45,
+    "location": "Banani",
+    "location2": "Moakhali"
   },
   {
   "id": 4,
   "image":"https://freepngimg.com/thumb/train/29499-2-train-file-thumb.png",
     "name": "Train",
-    "price": 35
+    "priceOne": 57,
+    "priceTwo": 67,
+    "priceThree": 45,
+    "location": "Uttara",
+    "location2": "Dhanmondi27"
   }]

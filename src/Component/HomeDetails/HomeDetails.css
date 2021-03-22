@@ -5,9 +5,27 @@
     padding-bottom: 15px;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .Ride_info img{
     width:150px;
     height: 150px;
 }
 .Ride_info h3{}
+.search-btn{
+    background-color: #FF6A48;
+    border: none;
+    padding: 4px 20px;
+    margin-top: 10px;
+}
+.search-btn a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 480px){
+    .Ride_info{
+        box-shadow: 5px 10px 18px #888888;
+    }
+}

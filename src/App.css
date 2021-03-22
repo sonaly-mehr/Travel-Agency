@@ -22,4 +22,10 @@
   text-decoration: none;
   color:#000;
 }
-li.login {background-color: #FF6A48; color:#fff;}
+li.login-style {
+  padding: 4px 19px;
+  background-color: #FF6A48;
+}
+login-style {
+  color:#fff;
+}

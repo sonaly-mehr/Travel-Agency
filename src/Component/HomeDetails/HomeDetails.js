@@ -6,11 +6,11 @@ const HomeDetails = (props) => {
         const {image, name, id} =props.rData;
     return (
         
-        <div className="col-md-3">
+        <div className="col-md-3 col-12">
             <div className="Ride_info">
             <img src={image} alt=""/>
             <h3>{name}</h3>
-            <button><Link to={`/shipment/${id}`}></Link></button>
+            <button className="search-btn"><Link to={`/destination/${id}`}>Search</Link></button>
             </div>
         </div>
     );

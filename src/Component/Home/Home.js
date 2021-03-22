@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(()=> {
         setrideData(Data);
-    })
+    },[])
     return (
         <div className="home-section">
 
