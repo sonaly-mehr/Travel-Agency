@@ -1,5 +1,10 @@
 Project Name: Travel Agency
 
-Description: in this project the task was to create rides list from fake data and and whenever ride button is clicked it takes to a login page if the user is not already logged in. and when the user logged in it redirects to matching id route of the specific ride and shows the detail information about the ride.
+Description: 
 
-Firebase Link : https://dreamy-swartz-08a4e5.netlify.app
+- Its a travel agency website where user can search any ride.
+- user needs to login if not already logged in to search a particular ride.
+- user needs to select a destination and search over the destination, and available ride will be shown on that specific destination on that date.
+- When the Destination will be selected this will be shown on the map.
+
+Netlify Link : https://dreamy-swartz-08a4e5.netlify.app
